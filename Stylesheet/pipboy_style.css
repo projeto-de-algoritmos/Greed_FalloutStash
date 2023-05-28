@@ -27,7 +27,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 @keyframes flicker {
@@ -77,4 +76,8 @@ body {
 
 .button:hover {
   background-color: #555;
+}
+
+.itemList {
+  list-style-type: none;
 }

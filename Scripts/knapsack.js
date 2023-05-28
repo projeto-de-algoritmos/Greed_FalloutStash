@@ -1,6 +1,9 @@
 function knapsack(index, capacidade, itens, valor_total) {
   if (index < 0 || capacidade === 0) {
-    return valor_total;
+    return {
+      valor_total,
+      itens_selecionados: [],
+    };
   }
 
   if (itens[index].peso > capacidade) {
@@ -13,7 +16,13 @@ function knapsack(index, capacidade, itens, valor_total) {
     itens,
     valor_total + itens[index].valor
   );
+
   const exclui = knapsack(index - 1, capacidade, itens, valor_total);
 
-  return Math.max(inclui, exclui);
+  if (inclui.valor_total > exclui.valor_total) {
+    inclui.itens_selecionados.push(index);
+    return inclui;
+  } else {
+    return exclui;
+  }
 }

@@ -4,6 +4,7 @@
     <script src="./Scripts/knapsack.js" defer></script>
     <script src="./Scripts/item.js" defer></script>
     <script src="./Scripts/lista.js" defer></script>
+    <script src="./Scripts/buttons.js" defer></script>
     <title>Pip-Boy Page</title>
     <link
       rel="stylesheet"
@@ -24,12 +25,18 @@
         <h1>Welcome to the Pip-Boy Page!</h1>
         <p>Explore the wasteland with your trusty Pip-Boy.</p>
         <ul class="itemList"></ul>
+        <div>
+          <p id="resposta-knapsack"></p>
+          <ul id="selectedItemList"></ul>
+        </div>
       </div>
       <div class="buttons">
-        <button class="button">Status</button>
-        <button class="button">Inventory</button>
-        <button class="button">Map</button>
-        <button class="button">Settings</button>
+        <button class="button" id="knapsack-button" onclick="optimizeBag()">
+          Knapsack
+        </button>
+        <button class="button" id="inventory-button">Inventory</button>
+        <button class="button" id="map-button">Map</button>
+        <button class="button" id="setting-button">Settings</button>
       </div>
     </div>
   </body>

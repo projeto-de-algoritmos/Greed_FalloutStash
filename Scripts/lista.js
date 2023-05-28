@@ -4,7 +4,10 @@ const populaLista = () => {
   let texto = "";
 
   itens.forEach((item) => {
-    texto += `<li>${item.nome}: ${item.peso}kg, ${item.valor} caps</li>`;
+    texto += `<li>
+    <input type="checkbox" id="item1">
+    <label for="item1">${item.nome}: ${item.peso}kg, ${item.valor} caps 
+    </li>`;
   });
 
   itemList.innerHTML = texto;
