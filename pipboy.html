@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Pip-Boy Page</title>
-  <link rel="stylesheet" type="text/css" href="./Stylesheet/pipboy_style.css">
-  <link rel="icon" type="image/x-icon" href="./Stylesheet/imgs/iconfallout.png">
-</head>
-<body>
-  <div class="pipboy">
-    <div class="logo">Fallout Stash</div>
-    <div class="screen">
-      <!-- Conteúdo da tela do Pip-Boy aqui -->
-      <h1>Welcome to the Pip-Boy Page!</h1>
-      <p>Explore the wasteland with your trusty Pip-Boy.</p>
+  <head>
+    <script src="./Scripts/knapsack.js" defer></script>
+    <script src="./Scripts/item.js" defer></script>
+    <script src="./Scripts/lista.js" defer></script>
+    <title>Pip-Boy Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Stylesheet/pipboy_style.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Stylesheet/imgs/iconfallout.png"
+    />
+  </head>
+  <body>
+    <div class="pipboy">
+      <div class="logo">Fallout Stash</div>
+      <div class="screen">
+        <!-- Conteúdo da tela do Pip-Boy aqui -->
+        <h1>Welcome to the Pip-Boy Page!</h1>
+        <p>Explore the wasteland with your trusty Pip-Boy.</p>
+        <ul class="itemList"></ul>
+      </div>
+      <div class="buttons">
+        <button class="button">Status</button>
+        <button class="button">Inventory</button>
+        <button class="button">Map</button>
+        <button class="button">Settings</button>
+      </div>
     </div>
-    <div class="buttons">
-      <button class="button">Status</button>
-      <button class="button">Inventory</button>
-      <button class="button">Map</button>
-      <button class="button">Settings</button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
