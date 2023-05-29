@@ -6,7 +6,7 @@ const populaLista = () => {
   let textoUtilitarios = "";
 
   itens.forEach((item, index) => {
-    const itemHTML = `<li id="${index}">${item.nome}: ${item.peso}kg, ${item.valor} caps</li>`;
+    const itemHTML = `<li id="${index}">${item.nome} <br> Peso: ${item.peso}kg <br> Valor: ${item.valor} caps</li>`;
 
     if (index < 20) {
       textoArmas += itemHTML;

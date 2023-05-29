@@ -96,7 +96,3 @@ itens.push(
   item39,
   item40
 );
-
-const itensOrganizados = quicksort(itens);
-
-console.log(itensOrganizados);
