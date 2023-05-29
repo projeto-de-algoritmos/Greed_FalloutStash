@@ -1,9 +1,13 @@
 const knapsackButton = document.querySelector("#knapsack-button");
 const knapsackAnswer = document.querySelector("#resposta-knapsack");
 const knapsackItems = document.querySelector("#selectedItemList");
+const inidividualKnapsackItems = document
+  .querySelector("#selectedItemList")
+  .getElementsByTagName("li");
 
+//utitliza o Knapsack para devolver os elementos de maior valor que preencham a mochila ao clicar no botão "knapsack"
 const optimizeBag = () => {
-  const result = knapsack(itens.length - 1, 60, itens, 0);
+  const result = knapsack(itens.length - 1, 150, itensOrganizados, 0);
   let itensTexto = "";
 
   console.log(result);
@@ -16,3 +20,11 @@ const optimizeBag = () => {
   knapsackAnswer.textContent = resultTexto;
   knapsackItems.innerHTML = itensTexto;
 };
+
+//adiciona classe "active" nos elementos da lista
+for (let i = 0; i < inidividualKnapsackItems.length; i++) {
+  inidividualKnapsackItems[i].addEventListener("click", (event) => {
+    event.currentTarget.classList.toggle("active");
+    console.log(event.currentTarget.classList);
+  });
+}

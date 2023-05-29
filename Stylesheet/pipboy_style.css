@@ -104,6 +104,10 @@ ul {
   padding: 0;
 }
 
-#resposta-knapsack{
+#resposta-knapsack {
   font-size: 30px;
+}
+
+li.active {
+  background-color: blue;
 }
