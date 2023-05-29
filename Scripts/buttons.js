@@ -1,10 +1,18 @@
 const knapsackButton = document.querySelector("#knapsack-button");
 const knapsackAnswer = document.querySelector("#resposta-knapsack");
-const knapsackItems = document.querySelector("#selectedItemsList");
+const knapsackItems = document.querySelector("#selectedItemList");
 
 const optimizeBag = () => {
-  const [resultValue, resultItems] = knapsack(itens.length - 1, 60, itens, 0);
+  const result = knapsack(itens.length - 1, 60, itens, 0);
+  let itensTexto = "";
 
-  const resultTexto = `Os itens mais valiosos que consegue levar custam, ao todo, ${resultValue} caps.`;
+  console.log(result);
+
+  result.itens_selecionados.forEach((item) => {
+    itensTexto += `<li>${itens[item].nome}</li>`;
+  });
+
+  const resultTexto = `Os itens mais valiosos que consegue levar custam, ao todo, ${result.valor_total} caps.`;
   knapsackAnswer.textContent = resultTexto;
+  knapsackItems.innerHTML = itensTexto;
 };
