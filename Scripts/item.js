@@ -23,7 +23,7 @@ const item10 = new Item("Kremvh's Tooth", 10, 600);
 const item11 = new Item("Molotov Cocktail", 10, 50);
 const item12 = new Item("Overseer's Guardian", 20, 2000);
 const item13 = new Item("Plasma Grenade", 10, 100);
-const item14 = new Item("Rad-X", 10, 20);
+const item14 = new Item("Reba II", 10, 200);
 const item15 = new Item("Shishkebab", 20, 700);
 const item16 = new Item("Sledgehammer", 30, 300);
 const item17 = new Item("Tire Iron", 20, 1000);
@@ -53,12 +53,50 @@ const item38 = new Item("Fusion Core", 10, 500);
 const item39 = new Item("XCell", 10, 100);
 const item40 = new Item("Yao Guai Roast", 10, 80);
 
-
 itens.push(
-  item0, item1, item2, item3, item4, item5, item6, item7, item8, item9, 
-  item10, item11, item12, item13, item14, item15, item16, item17, item18, item19,
-  item20, item21, item22, item23, item24, item25, item26, item27, item28, item29,
-  item30, item31, item32, item33, item34, item35, item36, item37, item38, item39,
+  item0,
+  item1,
+  item2,
+  item3,
+  item4,
+  item5,
+  item6,
+  item7,
+  item8,
+  item9,
+  item10,
+  item11,
+  item12,
+  item13,
+  item14,
+  item15,
+  item16,
+  item17,
+  item18,
+  item19,
+  item20,
+  item21,
+  item22,
+  item23,
+  item24,
+  item25,
+  item26,
+  item27,
+  item28,
+  item29,
+  item30,
+  item31,
+  item32,
+  item33,
+  item34,
+  item35,
+  item36,
+  item37,
+  item38,
+  item39,
   item40
 );
 
+const itensOrganizados = quicksort(itens);
+
+console.log(itensOrganizados);
