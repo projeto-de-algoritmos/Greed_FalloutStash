@@ -93,6 +93,10 @@ body {
   margin-bottom: 5px;
 }
 
+.itemList li:hover {
+  background-color: #555;
+}
+
 .screen {
   /* Outros estilos da classe .screen */
   max-height: 500px; /* Defina a altura máxima desejada */
@@ -109,5 +113,10 @@ ul {
 }
 
 li.active {
-  background-color: blue;
+  background-color: green;
+}
+
+li.active:hover {
+  background-color: greenyellow;
+  color: black;
 }
