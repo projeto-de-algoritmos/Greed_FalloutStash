@@ -138,3 +138,15 @@ button:hover {
   text-align: center;
   font-family: "fallout_overseer";
 }
+
+.weapon {
+  background-color: #ff0000; /* Cor para armas */
+}
+
+.armor {
+  background-color: #00ff00; /* Cor para armaduras */
+}
+
+.utility {
+  background-color: #0000ff; /* Cor para utilizáveis */
+}
