@@ -20,7 +20,7 @@ function knapsack(index, capacidade, itens, valor_total) {
   const exclui = knapsack(index - 1, capacidade, itens, valor_total);
 
   if (inclui.valor_total > exclui.valor_total) {
-    inclui.itens_selecionados.push(index);
+    inclui.itens_selecionados.push(itens[index]);
     return inclui;
   } else {
     return exclui;

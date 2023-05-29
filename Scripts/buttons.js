@@ -7,13 +7,29 @@ const inidividualKnapsackItems = document
 
 //utitliza o Knapsack para devolver os elementos de maior valor que preencham a mochila ao clicar no botão "knapsack"
 const optimizeBag = () => {
-  const result = knapsack(itens.length - 1, 150, itensOrganizados, 0);
+  const activeList = document.querySelectorAll(".active");
+  const itensSelecionados = [];
+  let itemID = 0;
+
+  activeList.forEach((item) => {
+    itemID = item.getAttribute("id");
+    itensSelecionados.push(itens[itemID]);
+  });
+
+  const itensSelecionadosOrdenados = quicksort(itensSelecionados);
+
+  const result = knapsack(
+    itensSelecionadosOrdenados.length - 1,
+    150,
+    itensSelecionadosOrdenados,
+    0
+  );
   let itensTexto = "";
 
   console.log(result);
 
   result.itens_selecionados.forEach((item) => {
-    itensTexto += `<li>${itens[item].nome}</li>`;
+    itensTexto += `<li>${item.nome}</li>`;
   });
 
   const resultTexto = `Os itens mais valiosos que consegue levar custam, ao todo, ${result.valor_total} caps.`;
