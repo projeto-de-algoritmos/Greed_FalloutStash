@@ -79,13 +79,31 @@ body {
 }
 
 .itemList {
-  list-style-type: none;
-  max-height: 300px;
-  overflow-y: auto;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .itemList li {
+  background-color: #333;
+  color: #c9c9c9;
+  font-size: 26px;
   padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.screen {
+  /* Outros estilos da classe .screen */
+  max-height: 500px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Adicione a rolagem vertical */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resposta-knapsack{
+  font-size: 30px;
 }

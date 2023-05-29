@@ -1,16 +1,37 @@
 const itemList = document.querySelector(".itemList");
 
 const populaLista = () => {
-  let texto = "";
+  let textoArmas = "";
+  let textoArmaduras = "";
+  let textoUtilitarios = "";
 
-  itens.forEach((item) => {
-    texto += `<li>
-    <input type="checkbox" id="item1">
-    <label for="item1">${item.nome}: ${item.peso}kg, ${item.valor} caps 
+  itens.forEach((item, index) => {
+    const itemHTML = `<li>
+      <input type="checkbox" id="item${index}" name="item${index}">
+      <label for="item${index}">${item.nome}: ${item.peso}kg, ${item.valor} caps</label>
     </li>`;
+
+    if (index < 20) {
+      textoArmas += itemHTML;
+    } else if (index < 32) {
+      textoArmaduras += itemHTML;
+    } else {
+      textoUtilitarios += itemHTML;
+    }
   });
 
-  itemList.innerHTML = texto;
+  itemList.innerHTML = `<div class="arma">
+    <h2>Armas</h2>
+    <ul>${textoArmas}</ul>
+  </div>
+  <div class="armadura">
+    <h2>Armaduras</h2>
+    <ul>${textoArmaduras}</ul>
+  </div>
+  <div class="utilitario">
+    <h2>Utilitários</h2>
+    <ul>${textoUtilitarios}</ul>
+  </div>`;
 };
 
 populaLista();
