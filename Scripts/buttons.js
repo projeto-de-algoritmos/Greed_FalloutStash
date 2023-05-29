@@ -25,12 +25,13 @@ const optimizeBag = () => {
   let itensTexto = "";
 
   result.itens_selecionados.forEach((item) => {
-    itensTexto += `<li>${item.nome}</li>`;
+    itensTexto += `<li>${item.nome} <br> <img src="./Stylesheet/imgs/weight.png" width = "20px"> ${item.peso} <br> <img src="./Stylesheet/imgs/caps-removebg-preview.png" width = "20px"> ${item.valor} </li>`;
   });
 
-  const resultTexto = `Dos itens selecionados, os mais valiosos que consegue levar custam, ao todo, ${result.valor_total} caps.`;
-  knapsackAnswer.textContent = resultTexto;
+  const resultTexto = `Dos itens selecionados, os mais valiosos que consegue levar custam, ao todo, ${result.valor_total} caps e sobrou ${result.capacidade} de capacidade. <br> Seguem os itens listados abaixo`;
+  knapsackAnswer.innerHTML = resultTexto;
   knapsackItems.innerHTML = itensTexto;
+  knapsackButton.setAttribute("disabled", "true");
 };
 
 //adiciona classe "active" nos elementos da lista

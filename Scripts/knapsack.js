@@ -3,6 +3,7 @@ function knapsack(index, capacidade, itens, valor_total) {
     return {
       valor_total,
       itens_selecionados: [],
+      capacidade,
     };
   }
 
