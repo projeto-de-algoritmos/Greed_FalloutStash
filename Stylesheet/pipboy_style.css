@@ -119,4 +119,5 @@ li.active {
 li.active:hover {
   background-color: greenyellow;
   color: black;
+  outline: auto;
 }

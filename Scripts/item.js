@@ -9,7 +9,7 @@ class Item {
 const itens = [];
 
 //armas
-const item0 = new Item("Delivery", 10, 770);
+const item0 = new Item("Deliverer", 10, 770);
 const item1 = new Item("The Last Minute", 20, 6500);
 const item2 = new Item("Nuka-nuke Launcher", 40, 650);
 const item3 = new Item("Combat Rifle", 20, 1000);

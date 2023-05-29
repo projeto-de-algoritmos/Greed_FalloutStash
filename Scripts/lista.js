@@ -6,7 +6,7 @@ const populaLista = () => {
   let textoUtilitarios = "";
 
   itens.forEach((item, index) => {
-    const itemHTML = `<li id="${index}">${item.nome} <br> Peso: ${item.peso}kg <br> Valor: ${item.valor} caps</li>`;
+    const itemHTML = `<li id="${index}">${item.nome} <br> <img src="./Stylesheet/imgs/fallout4_peso_icon.png"> ${item.peso} <br> <img src="./Stylesheet/imgs/fallout4_caps_icon.png"> ${item.valor} </li>`;
 
     if (index < 20) {
       textoArmas += itemHTML;

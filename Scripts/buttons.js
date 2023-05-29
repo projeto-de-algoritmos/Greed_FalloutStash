@@ -18,7 +18,7 @@ const optimizeBag = () => {
 
   const result = knapsack(
     itensSelecionadosOrdenados.length - 1,
-    150,
+    300,
     itensSelecionadosOrdenados,
     0
   );
@@ -33,14 +33,6 @@ const optimizeBag = () => {
   knapsackItems.innerHTML = itensTexto;
 };
 
-//VARIÁVEIS E FUNÇÕES DO BOTÃO INVENTÁRIO
-const inventarioButton = document.querySelector("#inventario-button");
-
-//recarrega a página ao clicar no botão para mostrar o inventário novamente
-inventarioButton.addEventListener("click", (event) => {
-  location.reload();
-});
-
 //adiciona classe "active" nos elementos da lista
 const inidividualKnapsackItems = document
   .querySelector("#selectedItemList")
@@ -50,3 +42,11 @@ for (let i = 0; i < inidividualKnapsackItems.length; i++) {
     event.currentTarget.classList.toggle("active");
   });
 }
+
+//VARIÁVEIS E FUNÇÕES DO BOTÃO INVENTÁRIO
+const inventarioButton = document.querySelector("#inventario-button");
+
+//recarrega a página ao clicar no botão para mostrar o inventário novamente
+inventarioButton.addEventListener("click", (event) => {
+  location.reload();
+});
