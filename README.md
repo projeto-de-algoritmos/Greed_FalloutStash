@@ -23,5 +23,5 @@ Descreva os objetivos do seu projeto e como ele funciona.
 ## Uso 
 Para utilizar nosso projeto, basta abrir a github pages. Na tela inicial temos um texto para ambientar o usuário e um botão "Caps aqui" para abrir a tela do knapsack. Nela, basta selecionar os itens que quer que o algoritmo considere e clicar em "Knapsack", ele vai devolver a melhor otimização que preencha sua mochila de maneira a carregar os itens mais valiosos. Para selecionar outros itens, basta clicar em Inventário.
 
-
+## [Entrega](./entrega.md)
 
