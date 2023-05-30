@@ -13,7 +13,9 @@
 Descreva os objetivos do seu projeto e como ele funciona. 
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-31.png)
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-39.png)
+![](./Stylesheet/imgs/Screenshot%20from%202023-05-30%2017-47-53.png)
 
 ## Instalação 
 **Linguagem**: HTML, CSS e Javascript<br>
