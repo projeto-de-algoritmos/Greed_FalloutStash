@@ -6,10 +6,7 @@ const populaLista = () => {
   let textoUtilitarios = "";
 
   itens.forEach((item, index) => {
-    const itemHTML = `<li>
-      <input type="checkbox" id="item${index}" name="item${index}">
-      <label for="item${index}">${item.nome}: ${item.peso}kg, ${item.valor} caps</label>
-    </li>`;
+    const itemHTML = `<li id="${index}">${item.nome} <br> <img src="./Stylesheet/imgs/weight.png" width = "20px"> ${item.peso} <br> <img src="./Stylesheet/imgs/caps-removebg-preview.png" width = "20px"> ${item.valor} </li>`;
 
     if (index < 20) {
       textoArmas += itemHTML;

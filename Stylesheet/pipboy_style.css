@@ -93,6 +93,10 @@ body {
   margin-bottom: 5px;
 }
 
+.itemList li:hover {
+  background-color: #555;
+}
+
 .screen {
   /* Outros estilos da classe .screen */
   max-height: 500px; /* Defina a altura máxima desejada */
@@ -104,6 +108,20 @@ ul {
   padding: 0;
 }
 
-#resposta-knapsack{
+#resposta-knapsack {
   font-size: 30px;
+}
+
+li.active {
+  background-color: green;
+}
+
+li.active:hover {
+  background-color: darkred;
+  outline: auto;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
